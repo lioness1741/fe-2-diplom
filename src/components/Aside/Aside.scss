@@ -1,0 +1,295 @@
+@import '../../css/vars';
+
+.aside {
+   width: 25%;
+   display: flex;
+   flex-direction: column;
+}
+
+.aside__filter {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-bottom: 70px;
+   border-radius: 5px;
+   background-color: $aside-grey;
+   color: white;
+}
+
+.aside__passengers {
+   background-color: $aside-grey;
+   color: white;
+}
+
+.aside-item {
+   width: 100%;
+   padding: 20px 20px 20px 20px;
+   border-bottom: 1px solid white;
+}
+
+.filter-title {
+   margin-left: 10px;
+   font-weight: 400;
+   font-size: 26px;
+}
+
+/** Options filter */
+
+.options-filter__item {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.date-form__label {
+   font-size: 24px;
+   margin-bottom: 30px;
+}
+
+.date-form {
+   &:first-child {
+      margin-bottom: 20px;
+   }
+   input {
+      width: 100%;
+      margin-top: 10px;
+   }
+}
+
+.options-filter__title {
+   font-size: 18px;
+   width: 100px;
+}
+
+
+/** Price filter */
+
+.price-filter {
+   width: 100%;
+   padding: 30px;
+}
+
+.slider-container {
+   width: 100%;
+   height: 15px;
+   margin-bottom: 30px;
+}
+
+.price-filter__text {
+   display: flex;
+   justify-content: space-between;
+
+   font-size: 20px;
+}
+
+/* * Date filter */
+
+.time-filter {
+   width: 100%;
+}
+
+.hidden {
+   display: none;
+}
+
+.time-filter_title {
+   font-size: 18px;
+}
+
+.time-filter_range{
+   margin-bottom: 40px;
+}
+
+/* PassangerAside */
+.aside__block {
+   display: flex;
+   flex-direction: column;
+   font-size: 16px;
+   border-bottom: 1px solid white;
+}
+
+.aside__title {
+   width: 100%;
+   padding: 20px;
+   text-align: center;
+   font-weight: 500;
+   text-transform: uppercase;
+   font-size: 22px;
+   border-bottom: 1px solid white;
+}
+
+.aside__block-title {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+   font-weight: bold;
+   font-size: 20px;
+   align-items: center;
+}
+
+.aside__block-info {
+   width: 100%;
+   margin-bottom: 40px;
+}
+
+.block-info__item,
+.block-info-city {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+}
+
+.time-date {
+   font-size: 16px;
+   color: #928f94;
+}
+
+.block-info-time-time {
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.time-item,
+.info-city-from,
+.info-city-to {
+   display: flex;
+   flex-direction: column;
+}
+
+.time-item-to,
+.time-item-from--arrival,
+.info-city-to,
+.info-city-from--arrival {
+   align-items: flex-end;
+}
+
+.time-item-from,
+.time-item-to--arrival,
+.info-city-from,
+.info-city-to--arrival {
+   align-items: flex-start;
+}
+
+.fs14 {
+   font-size: 14px;
+   color: #928f94;
+   text-transform: none;
+}
+
+.block-info-city {
+   text-transform: capitalize;
+}
+
+.block-info-arrow {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.aside-hidden__btn {
+   width: 15px;
+   height: 15px;
+   border: none;
+   border-radius: 4px;
+   background-color: $aside-grey;
+   background-image: url('../../img/btn-hid.svg');
+   background-position: center;
+   background-size: cover;
+}
+
+.aside-arrow--arrival {
+   transform: rotate(180deg);
+}
+
+.aside-passengers {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.aside-price {
+   font-weight: bold;
+   font-size: 18px;
+}
+
+.aside-price-full {
+   font-size: 26px;
+   color: $orange;
+}
+
+.price-info {
+   font-size: 20px;
+   font-weight: bold;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.active-button {
+   background-image: url('../../img/btn-act.svg');
+}
+
+.last-tickets__title {
+   margin-bottom: 20px;
+}
+
+.last-ticket {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 20px;
+   padding: 15px 20px 15px 20px;
+   border: 1px solid #c4c4c4;
+   background-color: white;
+}
+
+.last-ticket__header {
+   display: flex;
+   justify-content: space-between;
+}
+
+.last-ticket__title-from {
+   align-items: flex-start;
+}
+
+.last-ticket__title-to {
+   align-items: flex-end;
+}
+
+.last-ticket__title-from,
+.last-ticket__title-to {
+   display: flex;
+   flex-direction: column;
+}
+
+.last-ticket__title {
+   font-size: 20px;
+   text-transform: capitalize;
+}
+
+.last-ticket__title-to .last-ticket__subtitle {
+   text-align: right;
+}
+
+.last-ticket__subtitle {
+   font-size: 16px;
+   color: #928f94;
+}
+
+.last-ticket__info {
+   margin-top: 20px;
+   display: flex;
+   justify-content: right;
+}
+
+.last_ticket-price {
+   font-size: 16px;
+   color: #928f94;
+}
+
+.last-ticket__price-value {
+   color: $orange;
+   font-size: 30px;
+   font-weight: bold;
+}

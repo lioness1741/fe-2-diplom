@@ -1,0 +1,636 @@
+.ticket {
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+ }
+ 
+ .ticket_header-actions {
+    padding-left: 20px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+ }
+ 
+ .ticket_header-actions.routeBack {
+    justify-content: end;
+    margin-right: 24px;
+ }
+ 
+ .ticket__header-icon {
+    margin-left: 19px;
+    margin-right: 10px;
+ }
+ 
+ .ticket_header-button {
+    font-weight: 700;
+    font-size: 24px;
+    color: #292929;
+    padding: 0 33px 0 33px;
+    height: 60px;
+    border: 1px solid #292929;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: #ffffff;
+ }
+ .ticket_header-button:hover {
+    color: #FFD800;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+ }
+ .ticket_header-button:active {
+    background: #FFD800;
+    color: #292929;
+ }
+ 
+ .train.ticket_header-train {
+    background: #f7f6f6;
+ }
+ 
+ .seats .train_logo {
+    background: #f7f6f6;
+ }
+ 
+ .seats .train {
+    width: 100%;
+    box-sizing: content-box;
+    box-shadow: none;
+    border: none;
+    min-width: auto;
+    min-height: auto;
+    margin-bottom: 40px;
+ }
+ 
+ .seats .train_logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: auto;
+    padding: 0 15px 0 0;
+    position: relative;
+ }
+ 
+ .seats .train_logo::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0px;
+    right: 0;
+ 
+    border: 1px solid #ffffff;
+ }
+ 
+ .seats .train_logo-icon {
+    margin: 0 27px 0 35px;
+ }
+ 
+ .seats .train_title {
+    width: 153px;
+    align-self: auto;
+ }
+ 
+ .seats .train_name {
+    margin-bottom: 5px;
+    align-self: auto;
+ }
+ 
+ .seats .train_routes {
+    width: auto;
+    padding: 28px 36px 26px 36px;
+    position: relative;
+ }
+ 
+ .seats .train_routes::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0px;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #ffffff;
+ }
+ 
+ .seats .train_route-duration {
+    align-self: center;
+    margin: 0 54px 0 20px;
+ }
+ 
+ .seats .train_info {
+    border: none;
+    align-self: center;
+    width: auto;
+    padding: 0 0 0 35px;
+ }
+ 
+ .seats .train__info-duration {
+    margin-left: 10px;
+    width: 100px;
+ }
+ 
+ .seats .train_time {
+    display: flex;
+    align-items: center;
+ }
+ 
+ .ticket {
+    margin-bottom: 30px;
+ }
+ 
+ .ticket_class {
+    margin-bottom: 30px;
+ }
+ .ticket_title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+ 
+    color: #292929;
+    margin-left: 17px;
+    margin-top: 27px;
+ }
+ .ticket_count {
+    position: relative;
+    margin-bottom: 77px;
+ }
+ .ticket_count::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    bottom: -49px;
+    border: 1px dashed #c4c4c4;
+ }
+ 
+ .ticket_count-wrapper {
+    display: flex;
+ }
+ 
+ .ticket_count-card {
+    width: 33.33%;
+    padding: 20px 20px 0 20px;
+ }
+ 
+ .ticket_count-list {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #928f94;
+    border-radius: 5px;
+ 
+    background-color: #ffffff;
+ 
+    font-size: 14px;
+    line-height: 21px;
+    color: #292929;
+ 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+ }
+ 
+ .ticket_count-text {
+    margin-top: 23px;
+    margin-bottom: 20px;
+ 
+    font-size: 16px;
+    line-height: 19px;
+ }
+ 
+ .count-child {
+    color: #928f94;
+ }
+ 
+ .ticket_count-list::-ms-expand {
+    display: none;
+ }
+ 
+ .ticket_class-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+ }
+ 
+ .ticket_class-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ 
+ .ticket_class-item:nth-child(n + 2) {
+    margin-left: 150px;
+ }
+ 
+ .ticket_class-button {
+    border: 0;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ 
+ .ticket__class-icon {
+    width: 40px;
+    height: 40px;
+    fill: #c4c4c4;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+ 
+ .ticket__class-icon-first {
+    background-image: url('../img/Lux.svg');
+ }
+ .ticket__class-icon-second {
+    background-image: url('../img/Coupe.svg');
+ }
+ .ticket__class-icon-third {
+    background-image: url('../img/Platskart.svg');
+ }
+ .ticket__class-icon-fourth {
+    background-image: url('../img/Seats.svg');
+ }
+ 
+ .ticket__class-icon-second-active {
+    background-image: url('../img/Coupe-yel.svg');
+ }
+ .ticket__class-icon-third-active {
+    background-image: url('../img/Platskart-yel.svg');
+ }
+ .ticket__class-icon-fourth-active {
+    background-image: url('../img/Seats-yel.svg');
+ }
+ .ticket__class-icon-first-active {
+    background-image: url('../img/Lux-yel.svg');
+ }
+ 
+ .ticket_class-name {
+    margin-top: 18px;
+    font-size: 24px;
+    color: #928f94;
+ }
+ 
+ .ticket_class-button--active .ticket__class-icon {
+    fill: #FFD800;
+ }
+ 
+ .ticket_class-button--active .ticket_class-name {
+    color: #FFD800;
+ }
+ 
+ .ticket_coach-header {
+    min-height: 37px;
+    background: rgba(255,216,0, 0.44);
+    display: flex;
+    align-items: center;
+ }
+ .ticket_coach-list {
+    display: flex;
+    align-items: center;
+ 
+    list-style-type: none;
+    margin: 0;
+ 
+    font-weight: 400;
+    font-size: 18px;
+    color: #2d2b2f;
+ }
+ .ticket_coach-item {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-left: 7px;
+ 
+    color: #292929;
+    cursor: pointer;
+ }
+ .ticket_coach-item--active {
+    color: #ffffff;
+ }
+ .ticket_coach-numbering {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #292929;
+    margin: 0 20px 0 auto;
+ }
+ 
+ /* --------------*/
+ .coach-info {
+    display: flex;
+    justify-content: space-between;
+ }
+ .coach-info-header {
+    box-sizing: border-box;
+    width: 190px;
+    height: 161px;
+    background: #ffd98f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+ }
+ .coach-number {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 84px;
+ 
+    margin: 0;
+    color: #292929;
+ }
+ .coach-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+ }
+ .coach-info-card {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    padding-top: 30px;
+ }
+ 
+ .coach-info-card--price {
+    font-weight: 700;
+ }
+ 
+ .coach-info-card--services {
+    padding-right: 40px;
+ }
+ 
+ .coach-info-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #928f94;
+    margin-bottom: 0;
+ 
+    font-size: 16px;
+ }
+ .coach-info-title span {
+    font-weight: bold;
+ }
+ 
+ .coach-ticket-сurrency {
+    height: 17px;
+    margin-left: 10px;
+ }
+ .coach-info-count {
+    color: #000000;
+ }
+ 
+ .coach-info-text {
+    font-size: 20px;
+    font-weight: bold;
+ }
+ .coach-info-text:last-child {
+    margin-bottom: 0;
+ }
+ 
+ .coach-services {
+    margin-top: 14px;
+ }
+ 
+ .service {
+    width: 36px;
+    height: 34.11px;
+    border: 1px solid #292929;
+    border-radius: 5px;
+ position: relative;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+ 
+ .service:nth-child(n + 2) {
+    margin-left: 13px;
+ }
+ 
+ .service:hover {
+    background-color: #FFD800;
+ }
+ 
+ .service-active {
+    border-color: #fdb935;
+    background-color: #fdb935;
+ }
+ 
+ .service:disabled {
+    cursor: auto;
+    border-color: #fcdc9d;
+    background-color: #fcdc9d;
+ }
+ 
+ .services-help-hidden{
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    padding: 5px;
+    border: 1px solid grey;
+    font-size: 14px;
+ }
+ 
+ .air__item {
+    background-image: url('../img/Cond-black.svg');
+ }
+ 
+ /* .air-service:disabled {
+    background-image: url('../img/Conditioner-sqr.svg');
+ } */
+ 
+ .air__item-active {
+    background-image: url('../img/Con-active.svg');
+ }
+ 
+ .wifi__item {
+    background-image: url('../img/Wifi-black.svg');
+ }
+ 
+ /* .wifi-service:disabled {
+    background-image: url('../../../img/tickets/options/wifi-service-disable.svg');
+ } */
+ 
+ .wifi__item-active {
+    background-image: url('../img/Wifi-active.svg');
+ }
+ 
+ .linens__item {
+    background-image: url('../img/Lines-black.svg');
+ }
+ 
+ /* .linens-service:disabled {
+    background-image: url('../../../img/tickets/options/linen-service-disable.svg');
+ } */
+ 
+ .linens__item-active {
+    background-image: url('../img/Lines-active.svg');
+ }
+ 
+ .food__item {
+    background-image: url('../img/Eat-black.svg');
+ }
+ 
+ /* .food-service:disabled {
+    background-image: url('../../../img/tickets/options/food-service-disable.svg');
+ } */
+ 
+ .food__item-active {
+    background-image: url('../img/Eat-active.svg');
+ }
+  .coach,
+ .coach-inner {
+    width: 100%;
+ }
+ .coach-seats-list {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    width: 100%;
+    height: 145px;
+    background-repeat: no-repeat;
+    background-size: contain;
+ }
+ 
+ .coach-demand {
+    margin-left: auto;
+    margin-right: 42px;
+    width: 199px;
+    padding: 16px;
+    border-radius: 5px;
+ 
+    background-color: #f3f3f3;
+ 
+    font-size: 16px;
+    line-height: 19px;
+    color: #292929;
+ }
+ 
+ .coach-seats-list--platzcart {
+    background-image: url('../img/Platskart-img.png');
+ }
+ 
+ .coach-seats-list--kupe {
+    background-image: url('../img/Coupe-img.png');
+ }
+ 
+ .coach-seats-list--lux {
+    background-image: url('../img/Lux-img.png');
+ }
+ 
+ .coach-seats-list--seat {
+    background-image: url('../img/Seats-img.png');
+ }
+ .coach-seat {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    background-color: #f3f3f3;
+    font-size: 11px;
+    font-weight: bold;
+ }
+ 
+ .coach-seat--active {
+    border: 2px solid #ffd800;
+ }
+ 
+ .coach-seat:disabled {
+    background-color: #979797;
+ 
+    color: #ffffff;
+ }
+ 
+ .coach-seat--top {
+    width: 22px;
+    height: 27px;
+ }
+ 
+ .coach-seat--bottom {
+    width: 36px;
+    height: 21px;
+ }
+ 
+ .coach-seat--lux {
+    width: 23px;
+    height: 50px;
+ }
+ 
+ .coach-seat--single {
+    width: 22px;
+    height: 15px;
+ }
+ 
+ .coach-total {
+    height: 81px;
+ }
+ 
+ .coach-total-text {
+    margin: 0;
+    padding-top: 19px;
+    text-align: end;
+    padding-right: 38px;
+ }
+ 
+ .coach-total-value {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    padding-right: 5px;
+ 
+    color: #ffd800;
+ }
+ 
+ .coach-total-сurrency {
+    height: 17px;
+ }
+ 
+ /*----------------*/
+ .seats_title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+ 
+    color: #292929;
+    margin: 0 0 62px 0;
+ }
+ 
+ .seats_buttons {
+    height: 183px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 140px;
+ }
+ .seats_button {
+    height: 60px;
+    padding: 0 70px 0 70px;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #ffd800;
+    border-radius: 5px;
+    border: none;
+ }
+ 
+ .seats_button:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+ 
+ .seats_button:active {
+    color: #ffd800;
+    border: 1px solid #ffd800;
+    background-color: #e5e5e5;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+ }
+ 
+ .seats_button:disabled {
+    background: #928f94;
+    color: #ffffff;
+ }

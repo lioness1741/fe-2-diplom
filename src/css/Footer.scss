@@ -1,0 +1,186 @@
+.footer {
+    padding-top: 40px;
+    margin-top: 95px;
+    background-color: rgba(45, 43, 47, 1);
+    color: white;
+}
+
+.footer__contacts {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+
+.contacts__section {
+    width: 46%;
+}
+
+.contact {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer__title {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.contact__text {
+    font-size: 18px;
+}
+
+.contact__icon {
+    width: 25px;
+    height: 25px;
+
+    background: center center no-repeat;
+    background-size: contain;
+    margin-right: 28px;
+}
+
+.icon-phone {
+    background-image: url(../img/Phone.svg);
+}
+
+.icon-mail {
+    background-image: url(../img/Mail.svg);
+}
+
+.icon-skype {
+    background-image: url(../img/Skype.svg);
+}
+
+.icon-location {
+    background-image: url(../img/Location.svg);
+}
+
+.footer__subscribe {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.subscribe__form {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: flex-end;
+    label{
+        margin-bottom: 15px;
+    }
+}
+
+.subscribe__form label {
+    display: block;
+    font-size: 18px;
+}
+
+.subscribe__input {
+    width: 345px;
+    height: 45px;
+    border: none;
+
+    padding-left: 10px;
+}
+
+.subscribe__btn {
+    width: 170px;
+    height: 45px;
+    border: 1px solid rgba(229, 229, 229, 1);
+    border-radius: 3px;
+    background-color: inherit;
+    
+    color: rgba(229, 229, 229, 1);
+    padding: 0 15px 0 15px;
+    margin-left: 25px;
+    text-transform: uppercase;
+font-size: 24px;
+    &:hover {
+        background-color: #D4FF62;
+        color: black;
+        border: none;
+    }
+
+    &:active {
+        background-color: #ffffff;
+        color: black;
+        border: none;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.footer__footer {
+    border-top: solid 1px white;
+}
+
+.footer__logo {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    background: url(../img/Arrow.svg) center center no-repeat;
+    background-size: contain;
+}
+
+.socials {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.social {
+    width: 45px;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.youtube {
+    background-image: url('../img/youtube.svg');
+
+    &:hover {
+        background-image: url('../img/youtube-yel.svg');
+    }
+}
+
+.in {
+    background-image: url('../img/in.svg');
+
+    &:hover {
+        background-image: url('../img/in-yel.svg');
+    }
+}
+
+.google {
+    background-image: url('../img/google.svg');
+
+    &:hover {
+        background-image: url('../img/google-yel.svg');
+    }
+}
+
+
+.facebook {
+    background-image: url('../img/fb.svg');
+
+    &:hover {
+        background-image: url('../img/fb-yel.svg');
+    }
+}
+
+.twitter {
+    background-image: url('../img/tw.svg');
+
+    &:hover {
+        background-image: url('../img/tw-yel.svg');
+    }
+}

@@ -1,0 +1,197 @@
+@import '../../css/_vars';
+
+/** Form **/
+.home-page-title {
+    background: url(../../img/bg-header.png) center no-repeat;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.home-page__title {
+    width: 50%;
+
+    color: white;
+    font-size: 60px;
+    font-family: "Roboto-Thin";
+}
+
+.header__title-bold {
+    font-family: "Roboto-Bold";
+}
+
+.header__title {
+    margin: auto;
+    text-align: left;
+    justify-content: center;
+    line-height: 84.3px;
+}
+
+.home-page-title-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/** about us */
+
+.section__container {
+    padding-top: 118px;
+    padding-bottom: 88px;
+}
+
+.section__title {
+    font-size: 36px;
+    text-transform: uppercase;
+
+    margin-bottom: 30px;
+}
+
+.section__text {
+    border-left: solid 9px $orange;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+
+.section__text-bold {
+    font-weight: bold;
+}
+
+/** Working */
+
+.section__working {
+    background-image: url(../../img/bg-working.png);
+    background-position: center;
+    margin-bottom: 123px;
+}
+
+.working__container {
+    padding-top: 46px;
+    padding-bottom: 85px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.working__btn {
+    width: 254px;
+    height: 46px;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 1px white;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.section__title-white {
+    color: white;
+}
+
+.working__list {
+    display: flex;
+    padding: 0 150px 0 150px;
+    justify-content: space-around;
+}
+
+.list__item {
+    /*! откорректировать ширину */
+    width: 200px;
+
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.item__image {
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    margin-bottom: 25px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+/** Reviews */
+
+.reviews,
+.review {
+    display: flex;
+}
+
+.reviews {
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.review {
+    width: 40%;
+}
+
+.review__image {
+    min-width: 160px;
+    height: 160px;
+    border-radius: 50%;
+
+    margin-right: 15px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+}
+
+.review__author {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.review__text {
+    font-family: "Roboto-Italic";
+    font-size: 16px;
+    color: rgb(146, 143, 148);
+}
+
+.quotes {
+    font-family: "Roboto";
+    color: rgb(146, 143, 148);
+    font-size: 36px;
+}
+
+.reviews__nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.reviews__circle {
+    display: inline-block;
+
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: rgba(229, 229, 229, 1);
+}
+
+.reviews__circle-active {
+    background: rgba(196, 196, 196, 1);
+}
